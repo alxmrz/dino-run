@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DR;
 
 use PsyXEngine\Event;
@@ -8,7 +10,7 @@ use PsyXEngine\GameObjects;
 
 class Game implements GameInterface
 {
-    private int $start = 0;
+    private float $start = 0;
     private float $timer = 0;
     private int $createAfter = 0;
     private GameObjects $gameObjects;

@@ -17,21 +17,34 @@ class Dino extends GameObject
     private int $y = 0;
     private bool $collided = false;
 
-    private int $groundLineYCoord = 300;
+    private int $groundLineYCoord;
 
     private int $jumpOffset = 0;
 
-    public function __construct(int $x, int $y)
+    public function __construct(int $x, int $y, int $groundYLineCoord = 300)
     {
         $this->x = $x;
         $this->y = $y;
 
+        $this->groundLineYCoord = $groundYLineCoord;
+
         $this->renderNewPosition();
+    }
+
+    public function moveToPosition(int $x, int $y): void
+    {
+        $this->x = $x;
+        $this->y = $y;
     }
 
     public function isCollided(): bool
     {
         return $this->collided;
+    }
+
+    public function moveToGround(): void
+    {
+        $this->y = $this->groundLineYCoord;
     }
 
     private function renderNewPosition(): void
