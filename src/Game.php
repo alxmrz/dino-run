@@ -22,6 +22,7 @@ class Game implements GameInterface
         $this->gameObjects = $gameObjects;
 
         $this->gl = new GroundLine(0, 400);
+        $this->score = new Score(0, 0, 100, 50);
         
         $gameObjects->add($this->gl);
 
@@ -36,7 +37,7 @@ class Game implements GameInterface
     private function initGame(): void
     {
         $this->dino = new Dino(100, 300);
-        $this->score = new Score(0, 0, 100, 50);
+        $this->score->reset();
         $this->gameObjects->exchangeArray([$this->dino, $this->gl, $this->score]);
     }
 

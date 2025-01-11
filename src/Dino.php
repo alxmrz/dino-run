@@ -58,7 +58,7 @@ class Dino extends GameObject
 
     private function gravitate(): void
     {
-        if ($this->y < $this->groundLineYCoord) {
+        if (!$this->isOnGround()) {
             echo "Y: $this->y, GY: $this->groundLineYCoord \n";
             $this->y += 10;
 
@@ -66,9 +66,14 @@ class Dino extends GameObject
         }
     }
 
+    private function isOnGround(): bool
+    {
+        return $this->y >= $this->groundLineYCoord;
+    }
+
     public function onButtonPressed(KeyPressedEvent $event, GameObjects $gameObjects): void
     {
-        if ($event->isSpacePressed() && !$this->isJumping() ) {
+        if ($event->isSpacePressed() && $this->isOnGround() ) {
             $this->jumpOffset = 200;
         }
     }

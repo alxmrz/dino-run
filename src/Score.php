@@ -21,4 +21,9 @@ class Score extends GameObject
 
         $this->renderType->setText("Score: " . $this->value);
     }
+
+    public function reset(): void
+    {
+        $this->value = 0;
+    }
 }

@@ -9,7 +9,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $engine = new Engine();
 
-$engine->setWindowTitle('MyGame');
+$engine->setWindowTitle('Run, Dino, run');
 $engine->setWindowWidth(900);
 $engine->setWindowHeight(600);
 
