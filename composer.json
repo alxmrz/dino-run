@@ -1,0 +1,30 @@
+{
+    "name": "alxmrz/dino-run",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alxmrz",
+            "email": "alexandr.moroz97@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "alxmrz/psyx-engine": "dev-main"
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/alxmrz/psyx-engine"
+    },{
+        "type": "vcs",
+        "url": "https://github.com/alxmrz/php-sdl2"
+    }],
+    "autoload": {
+        "psr-4": {
+            "DR\\": "src/",
+            "DR\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0@dev"
+    }
+}
