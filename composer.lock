@@ -52,12 +52,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/alxmrz/psyx-engine.git",
-                "reference": "4620d78592e42a1903a2287913e452257116affe"
+                "reference": "b484397ef145b50f2649025f926384375e46bb37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alxmrz/psyx-engine/zipball/4620d78592e42a1903a2287913e452257116affe",
-                "reference": "4620d78592e42a1903a2287913e452257116affe",
+                "url": "https://api.github.com/repos/alxmrz/psyx-engine/zipball/b484397ef145b50f2649025f926384375e46bb37",
+                "reference": "b484397ef145b50f2649025f926384375e46bb37",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "source": "https://github.com/alxmrz/psyx-engine/tree/main",
                 "issues": "https://github.com/alxmrz/psyx-engine/issues"
             },
-            "time": "2024-07-20T20:11:12+00:00"
+            "time": "2025-01-11T08:35:40+00:00"
         }
     ],
     "packages-dev": [
@@ -662,12 +662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3658461bdb9c6767cd5578b1627198a422b0e573"
+                "reference": "3feca288f780aaec6475a577c83f50efc706cffe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3658461bdb9c6767cd5578b1627198a422b0e573",
-                "reference": "3658461bdb9c6767cd5578b1627198a422b0e573",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3feca288f780aaec6475a577c83f50efc706cffe",
+                "reference": "3feca288f780aaec6475a577c83f50efc706cffe",
                 "shasum": ""
             },
             "require": {
@@ -752,7 +752,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-10T08:58:26+00:00"
+            "time": "2025-01-10T14:54:28+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -1684,7 +1684,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "alxmrz/psyx-engine": 20
+        "alxmrz/psyx-engine": 20,
+        "phpunit/phpunit": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

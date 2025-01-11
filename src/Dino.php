@@ -59,7 +59,6 @@ class Dino extends GameObject
     private function gravitate(): void
     {
         if (!$this->isOnGround()) {
-            echo "Y: $this->y, GY: $this->groundLineYCoord \n";
             $this->y += 10;
 
             $this->renderNewPosition();
